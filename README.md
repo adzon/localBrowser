@@ -12,7 +12,7 @@ npm install
 最后执行命令启动服务即可
 
 ```
-node app.js "你的镜像域名"
+node app.js -s "你的镜像域名"
 ```
 
 举例，你的自动化系统地址为 http://demo.fbclient.xyz/
@@ -20,7 +20,7 @@ node app.js "你的镜像域名"
 那么你就需要执行命令
 
 ```
-node app.js demo.fbclient.xyz
+node app.js -s demo.fbclient.xyz
 ```
 
 保持窗口开启，即可在后台打开本地浏览器了。
