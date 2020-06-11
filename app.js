@@ -111,7 +111,8 @@ app.post('/openBrowser', async (req, res) => {
             // status 0，已登录，1：未登录
             if (status === 1) {
                 try{
-                    await page.setCookie(...cookies)
+                    let cookies_arr = JSON.parse(cookies);
+                    await page.setCookie(...cookies_arr)
                     let { status } = await checkLoginStatus(page)
                 }catch(e)
                 {
