@@ -115,7 +115,7 @@ app.post('/openBrowser', async (req, res) => {
                     let { status } = await checkLoginStatus(page)
                 }catch(e)
                 {
-                    
+                    console.log(e);
                 }
               
                 if (status === 1) {
