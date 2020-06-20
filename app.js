@@ -97,7 +97,7 @@ app.post('/openBrowser', async (req, res) => {
         const page = await browser.newPage()
 
         let headers_arr = JSON.parse(headers || {});
-        await page.setExtraHTTPHeaders(...headers_arr);
+        await page.setExtraHTTPHeaders(headers_arr);
         await page.setBypassCSP(true);
         await page.setJavaScriptEnabled(true);
         //这里对 Page 进行设置
