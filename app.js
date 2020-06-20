@@ -96,7 +96,7 @@ app.post('/openBrowser', async (req, res) => {
         const browser = await puppeteer.launch(launch || {});
         const page = await browser.newPage()
 
-        await page.setExtraHTTPHeaders(headers);
+        await page.setExtraHTTPHeaders(headers || {});
         await page.setBypassCSP(true);
         await page.setJavaScriptEnabled(true);
         //这里对 Page 进行设置
