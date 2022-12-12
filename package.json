@@ -12,7 +12,7 @@
     "bull": "^3.13.0",
     "commander": "^5.1.0",
     "cos-nodejs-sdk-v5": "^2.5.20",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "localtunnel": "^2.0.0",
     "puppeteer": "^2.1.1",
     "puppeteer-extra": "^3.1.9",
